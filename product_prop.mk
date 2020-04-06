@@ -35,3 +35,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.camera.aux.packagelist=org.lineageos.snap,com.google.android.GoogleCamera,org.codeaurora.snapcam \
     persist.camera.privapp.list=org.codeaurora.snapcam \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam
+
+# maintainer
+ro.havoc.maintainer=Blacksuan19
