@@ -10,16 +10,18 @@ ro.adb.secure=0 \
 ro.secure=0 \
 ro.debuggable=1
 
-# Audio
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.bluetooth.a2dp_offload.supported=false \
-    persist.bluetooth.a2dp_offload.disabled=true \
-    vendor.audio.feature.a2dp_offload.enable=false \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=false
-
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.bluetooth.library_name=libbluetooth.so
+    persist.bluetooth.bqr.event_mask=14  \
+    persist.bluetooth.bqr.min_interval_ms=500  \
+    vendor.bluetooth.soc=cherokee  \
+    vendor.qcom.bluetooth.soc=cherokee  \
+    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac  \
+    persist.bluetooth.a2dp_offload.disabled=false  \
+    persist.vendor.bt.aac_frm_ctl.enabled=true  \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive  \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=true  \
+    ro.bluetooth.a2dp_offload.supported=true
 
 # VoLTE
 PRODUCT_PRODUCT_PROPERTIES += \
