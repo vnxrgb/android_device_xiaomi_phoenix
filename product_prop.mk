@@ -40,5 +40,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.camera.privapp.list=org.codeaurora.snapcam \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam
 
+# Display
+PRODUCT_PRODUCT_PROPERTIES += \
+	debug.sf.latch_unsignaled=0
+
 # maintainer
 ro.havoc.maintainer=Blacksuan19
