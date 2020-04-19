@@ -44,7 +44,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Display
 PRODUCT_PRODUCT_PROPERTIES += \
-	debug.sf.latch_unsignaled=0
+	debug.sf.latch_unsignaled=1
 
 # CNE
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -162,6 +162,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=0
+    
+# UI
+PRODUCT_PRODUCT_PROPERTIES += \
+    sys.use_fifo_ui=1
 
 # Wireless display
 PRODUCT_PRODUCT_PROPERTIES += \
